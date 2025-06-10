@@ -1,0 +1,19 @@
+{
+  "menu_links": [
+    {
+      "title": "Home",
+      "url": "index.html",
+      "new_tab": false
+    },
+    {
+      "title": "Bands & DJs",
+      "url": "bands-djs.html",
+      "new_tab": false
+    },
+    {
+      "title": "Contacts",
+      "url": "contacts.html",
+      "new_tab": false
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Town Hardcore Fest 2025 - Bands & DJs</title>
+    <link rel="icon" href="https://ktownhardcorefest.org/wp-content/uploads/2021/04/ktown_logo-150x150.png" sizes="32x32">
+    <link rel="icon" href="https://ktownhardcorefest.org/wp-content/uploads/2021/04/ktown_logo-300x300.png" sizes="192x192">
+    <script src="nav.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>K-TOWN HARDCORE FEST INFOPOINT 2025</h1>
+    </header>
+
+    <div class="day-tabs" id="dayTabs">
+        <!-- Tabs will be injected here -->
+    </div>
+
+    <div id="contactsContainer">
+        <!-- Contacts will be injected here -->
+    </div>
+
+    <div id="scheduleContainer">
+        <!-- Schedule will be injected here -->
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        Promise.all([
+            fetch('schedule.json').then(r => r.json()),
+            fetch('band-checkers.json').then(r => r.json())
+        ])
+        .then(([scheduleData, contactsData]) => {
+            const dayTabs = document.getElementById('dayTabs');
+            const contactsContainer = document.getElementById('contactsContainer');
+            const scheduleContainer = document.getElementById('scheduleContainer');
+
+            // Create day tabs
+            scheduleData.days.forEach((day, index) => {
+                const tab = document.createElement('button');
+                tab.className = 'day-tab' + (index === 0 ? ' active' : '');
+                tab.textContent = day.day;
+                tab.addEventListener('click', () => {
+                    showDay(day.slug, scheduleData, contactsData);
+                });
+                dayTabs.appendChild(tab);
+            });
+
+            // Show first day by default (without click event)
+            if (scheduleData.days.length > 0) {
+                const firstDay = scheduleData.days[0];
+                showDay(firstDay.slug, scheduleData, contactsData);
+                document.querySelector('.day-tab').classList.add('active');
+            }
+
+            function showDay(daySlug, scheduleData, contactsData) {
+                // Update active tab
+                document.querySelectorAll('.day-tab').forEach(tab => {
+                    tab.classList.remove('active');
+                });
+                event?.target?.classList.add('active');
+
+                // Find the day data
+                const day = scheduleData.days.find(d => d.slug === daySlug);
+                if (!day) return;
+
+                // Find contacts for this day
+                const dayContacts = contactsData.contacts.find(c => c.day === daySlug)?.people || [];
+
+                // Build Contacts HTML
+                contactsContainer.innerHTML = `
+                    <div class="contacts-container">
+                        <div class="contacts-title">DAY CONTACTS</div>
+                        <div class="contact-grid">
+                            ${dayContacts.map(contact => `
+                                <div class="contact-item">
+                                    <div class="contact-name">${contact.name}</div>
+                                    <div>${contact.phone}</div>
+                                    <a href="${contact.signal_link}" class="signal-button">CALL ON SIGNAL</a>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+
+                // Build Schedule HTML
+                scheduleContainer.innerHTML = `
+                    <div class="band-list">
+                        ${day.bands.map(band => `
+                            <div class="band-card ${band.isDJ ? 'dj-card' : ''}">
+                                <div class="band-time">${band.time}</div>
+                                <div class="band-name ${band.isDJ ? 'band-dj' : ''}">${band.name}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            document.getElementById('scheduleContainer').innerHTML = `
+                <div style="color:#ff3860; text-align:center; padding: 20px;">
+                    Error loading schedule. Please check console for details.
+                </div>
+            `;
+        });
+    });
+</script>
+</body>
+</html>

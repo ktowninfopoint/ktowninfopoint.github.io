@@ -1,0 +1,247 @@
+{
+  "days": [
+    {
+      "day": "FRIDAY",
+      "slug": "friday",
+      "contact_groups": [
+        {
+          "type": "Medics",
+          "contacts": [
+            {
+              "name": "Daniel",
+              "phone": "+45 60 57 05 68",
+              "available": "17:00-01:45"
+            },
+            {
+              "name": "Laura",
+              "phone": "+45 24 46 87 61",
+              "available": "17:00-01:45"
+            },
+            {
+              "name": "Randi",
+              "phone": "+45 51 90 00 17",
+              "available": "17:00-19:30"
+            }
+          ]
+        },
+        {
+          "type": "Security-Door",
+          "contacts": [
+            {
+              "name": "Elisavet",
+              "phone": "+45 50 24 47 03",
+              "available": "16:00-04:30"
+            },
+            {
+              "name": "Klüver",
+              "phone": "+45 28 30 08 10",
+              "available": "16:00-04:30"
+            }
+          ]
+        },
+        {
+          "type": "Economy",
+          "contacts": [
+            {
+              "name": "Gustav",
+              "phone": "+45 53 37 31 04",
+              "available": "all day"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "SATURDAY",
+      "slug": "saturday",
+      "contact_groups": [
+        {
+          "type": "Medics",
+          "contacts": [
+            {
+              "name": "Daniel",
+              "phone": "+45 60 57 05 68",
+              "available": "17:00-01:30"
+            },
+            {
+              "name": "Laura",
+              "phone": "+45 24 46 87 61",
+              "available": "17:00-01:30"
+            },
+            {
+              "name": "Emma",
+              "phone": "+45 50 73 45 10",
+              "available": "17:00-01:30"
+            },
+            {
+              "name": "Maja",
+              "phone": "+45 93 60 71 14",
+              "available": "17:00-01:30"
+            }
+          ]
+        },
+        {
+          "type": "Security-Door",
+          "contacts": [
+            {
+              "name": "Signe",
+              "phone": "+45 41 11 81 88",
+              "available": "16:30-23:30"
+            },
+            {
+              "name": "Sumo",
+              "phone": "+45 29 63 85 47",
+              "available": "16:30-23:30"
+            },
+            {
+              "name": "Liam",
+              "phone": "+45 51 15 76 15",
+              "available": "23:00-04:30"
+            },
+            {
+              "name": "Sam",
+              "phone": "+45 51 15 76 10",
+              "available": "23:00-04:30"
+            }
+          ]
+        },
+        {
+          "type": "Economy",
+          "contacts": [
+            {
+              "name": "Birk",
+              "phone": "+45 25 61 14 04",
+              "available": "all day"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "SUNDAY",
+      "slug": "sunday",
+      "contact_groups": [
+        {
+          "type": "Medics",
+          "contacts": [
+            {
+              "name": "Daniel",
+              "phone": "+45 60 57 05 68",
+               "available": "12:00-23:30 (including bike wars)"
+            },
+            {
+              "name": "Emma",
+              "phone": "+45 50 73 45 10",
+              "available": "18:00-22:00"
+            },
+            {
+              "name": "Maja",
+              "phone": "+45 93 60 71 14",
+              "available": "18:00-23:30"
+            },
+            {
+              "name": "Randi",
+              "phone": "+45 51 90 00 17",
+              "available": "18:00-23:30"
+            }
+          ]
+        },
+        {
+          "type": "Security-Door",
+          "contacts": [
+            {
+              "name": "Liam",
+              "phone": "+45 51 15 76 15",
+              "available": "17:30-00:30"
+            },
+            {
+              "name": "Sam",
+              "phone": "+45 51 15 76 10",
+              "available": "17:30-00:30"
+            },
+            {
+              "name": "Lukas",
+              "phone": "+45 XX XX XX XX",
+              "available": "00:00-04:30"
+            },
+            {
+              "name": "Michael",
+              "phone": "+45 XX XX XX XX",
+              "available": "00:00-04:30"
+            }
+          ]
+        },
+        {
+          "type": "Economy",
+          "contacts": [
+            {
+              "name": "Birk",
+              "phone": "+45 25 61 14 04",
+              "available": "all day"
+            },
+            {
+              "name": "Gustav",
+              "phone": "+45 53 37 31 04",
+              "available": "all day"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "ALL DAYS",
+      "slug": "alldays",
+      "contact_groups": [
+        {
+          "type": "Fix & Repairs!",
+          "contacts": [
+            {
+              "name": "Kim",
+              "phone": "+45 41 15 26 90",
+              "available": "all days"
+            }
+          ]
+        },
+        {
+          "type": "K-Town Crew",
+          "contacts": [
+            {
+              "name": "Meagan",
+              "phone": "+45 53 68 58 46",
+              "signal_link": "https://signal.link/call/#key=rffn-nbsp-ddqc-nrnt-grkn-rmhh-gzbp-nscx"
+            },
+            {
+              "name": "Federico",
+              "phone": "+45 23 72 20 23",
+              "signal_link": "https://signal.link/call/#key=zqxn-rmsq-gtxr-qmfp-mqmz-tghg-mnfk-tmbr"
+            },
+            {
+              "name": "Christina",
+              "phone": "+45 50 27 62 32",
+              "signal_link": "https://signal.link/call/#key=gqkf-dftp-xpqd-ntxf-hcgm-sghq-sckx-tgsz"
+            },
+            {
+              "name": "Mathias",
+              "phone": "+45 28 89 22 29",
+              "signal_link": "https://signal.link/call/#key=mgch-bmmh-phxg-sbdg-pzhc-fkhx-mxcz-mzdr"
+            },
+            {
+              "name": "Vedran",
+              "phone": "+45 71 86 89 22",
+              "signal_link": "https://signal.link/call/#key=qrkr-txrq-dqmx-rcnn-kpsm-fcxp-sdbz-gcrc"
+            },
+            {
+              "name": "Camilla",
+              "phone": "+45 60 66 76 01",
+              "signal_link": "https://signal.link/call/#key=xhgg-xsnm-rpqz-gbfp-pcbf-rqkz-ndqb-ntth"
+            },
+            {
+              "name": "Birk",
+              "phone": "+45 25 61 14 04"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

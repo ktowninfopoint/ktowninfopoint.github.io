@@ -1,0 +1,34 @@
+{
+  "links": [
+    {
+      "title": "Volunteer Check-in",
+      "url": "https://signup.com/go/tCTFjnM",
+      "description": "Volunteers check-in and add volunteer",
+      "new_tab": true
+    },
+    {
+      "title": "Band/DJ Check-in",
+      "url": "bands-djs.html",
+      "description": "View bands schedule and contacts",
+      "new_tab": false
+    },
+    {
+      "title": "Contacts",
+      "url": "contacts.html",
+      "description": "Security, medical and team coordination",
+      "new_tab": false
+    },
+    {
+      "title": "Signup System",
+      "url": "https://signup.com/Dashboard#/",
+      "description": "Signups management and generate daily reports and schedules",
+      "new_tab": true
+    },
+    {
+      "title": "Gmail",
+      "url": "https://mail.google.com/mail/u/0/#inbox",
+      "description": "Check emails for updates and communications",
+      "new_tab": true
+    }
+  ]
+}

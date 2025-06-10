@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Town Hardcore Fest 2025 - InfoPoint</title>
+    <link rel="icon" href="https://ktownhardcorefest.org/wp-content/uploads/2021/04/ktown_logo-150x150.png" sizes="32x32">
+    <link rel="icon" href="https://ktownhardcorefest.org/wp-content/uploads/2021/04/ktown_logo-300x300.png" sizes="192x192">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>K-TOWN HARDCORE FEST 2025 INFOPOINT</h1>
+    </header>
+
+    <div class="link-grid" id="linksContainer">
+        <!-- Links will be injected here -->
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        fetch('links.json')
+            .then(response => response.json())
+            .then(data => {
+                const linksContainer = document.getElementById('linksContainer');
+
+                data.links.forEach(link => {
+                    const linkCard = document.createElement('div');
+                    linkCard.className = 'link-card';
+                    // Open in new tab if specified
+                    linkTarget = '_self';
+                    if (link.new_tab) {
+                        linkTarget = '_blank';
+                    }
+                    linkCard.innerHTML = `
+                        <div class="link-title">${link.title}</div>
+                        <div class="link-description">${link.description}</div>
+                        <a href="${link.url}" class="link-button" target="${linkTarget}">GO</a>
+                    `;
+                    linksContainer.appendChild(linkCard);
+                });
+            })
+            .catch(error => {
+                console.error('Error loading links:', error);
+                document.getElementById('linksContainer').innerHTML = `
+                    <div style="color:#ff3860; text-align:center; padding: 20px;">
+                        Error loading resources. Please check console for details.
+                    </div>
+                `;
+            });
+    });
+</script>
+</body>
+</html>

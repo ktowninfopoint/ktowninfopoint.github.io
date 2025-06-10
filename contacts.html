@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Town Hardcore Fest 2025 - Contacts</title>
+    <link rel="icon" href="https://ktownhardcorefest.org/wp-content/uploads/2021/04/ktown_logo-150x150.png" sizes="32x32">
+    <link rel="icon" href="https://ktownhardcorefest.org/wp-content/uploads/2021/04/ktown_logo-300x300.png" sizes="192x192">
+    <script src="nav.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>KTOWN HARDCORE CONTACTS</h1>
+    </header>
+
+    <div class="day-tabs" id="dayTabs">
+        <!-- Tabs will be injected here -->
+    </div>
+
+    <div id="contactsContainer">
+        <!-- Contacts will be injected here -->
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        fetch('contacts.json')
+            .then(response => response.json())
+            .then(data => {
+                const dayTabs = document.getElementById('dayTabs');
+                const contactsContainer = document.getElementById('contactsContainer');
+                let defaultDay = 'friday';
+
+                // Create day tabs
+                data.days.forEach((day) => {
+                    const tab = document.createElement('button');
+                    tab.className = 'day-tab' + (day.slug === defaultDay ? ' active' : '');
+                    tab.textContent = day.day;
+                    tab.addEventListener('click', (e) => {
+                        showContacts(day.slug, data, e);
+                    });
+                    dayTabs.appendChild(tab);
+                });
+
+                // Show Friday by default
+                const fridayData = data.days.find(d => d.slug === defaultDay);
+                if (fridayData) {
+                    showContacts(defaultDay, data);
+                }
+
+                function showContacts(daySlug, data, event) {
+                    // Update active tab
+                    if (event) {
+                        document.querySelectorAll('.day-tab').forEach(tab => {
+                            tab.classList.remove('active');
+                        });
+                        event.target.classList.add('active');
+                    }
+
+                    // Find selected day
+                    const day = data.days.find(d => d.slug === daySlug);
+                    if (!day) return;
+
+                    // Build contacts HTML
+                    let html = `<div class="contact-section active">`;
+
+                    day.contact_groups.forEach(group => {
+                        html += `
+                            <div class="contact-group">
+                                <div class="group-title">${group.type}</div>
+                        `;
+
+                        group.contacts.forEach(contact => {
+                            const signalButton = contact.signal_link
+                                ? `<a href="${contact.signal_link}" class="signal-button">SIGNAL CALL</a>`
+                                : '';
+
+                            const availableDiv = contact.available
+                                ? `<div class="contact-available">Available: ${contact.available}</div>`
+                                : '';
+
+                            html += `
+                                <div class="contact-card">
+                                    <div class="contact-info">
+                                        <div class="contact-name">${contact.name}</div>
+                                        <div class="contact-details">
+                                            <div class="contact-phone">${contact.phone}</div>
+                                            ${availableDiv}
+                                        </div>
+                                    </div>
+                                    <div class="contact-actions">
+                                        ${signalButton}
+                                    </div>
+                                </div>
+                            `;
+                        });
+
+                        html += `</div>`;
+                    });
+
+                    html += `</div>`;
+                    contactsContainer.innerHTML = html;
+                }
+            })
+            .catch(error => {
+                console.error('Error loading contacts:', error);
+                contactsContainer.innerHTML = `
+                    <div style="color:#ff3860; text-align:center; padding: 20px;">
+                        Error loading contacts. Please check console for details.
+                    </div>
+                `;
+            });
+    });
+</script>
+<link rel="stylesheet" href="nav.css">
+</body>
+</html>

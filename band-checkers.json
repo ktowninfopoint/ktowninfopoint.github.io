@@ -1,0 +1,79 @@
+{
+  "contacts": [
+    {
+      "day": "friday",
+      "people": [
+        {
+          "name": "Christina",
+          "phone": "+45 50 27 62 32",
+          "signal_link": "https://signal.link/call/#key=gqkf-dftp-xpqd-ntxf-hcgm-sghq-sckx-tgsz"
+        },
+        {
+          "name": "Mathias",
+          "phone": "+45 28 89 22 29",
+          "signal_link": "https://signal.link/call/#key=mgch-bmmh-phxg-sbdg-pzhc-fkhx-mxcz-mzdr"
+        }
+      ]
+    },
+    {
+      "day": "saturday",
+      "people": [
+        {
+          "name": "Meagan",
+          "phone": "+45 53 68 58 46",
+          "signal_link": "https://signal.link/call/#key=rffn-nbsp-ddqc-nrnt-grkn-rmhh-gzbp-nscx"
+        },
+        {
+          "name": "Federico",
+          "phone": "+45 23 72 20 23",
+          "signal_link": "https://signal.link/call/#key=zqxn-rmsq-gtxr-qmfp-mqmz-tghg-mnfk-tmbr"
+        }
+      ]
+    },
+    {
+      "day": "saturday-matinée",
+      "people": [
+        {
+          "name": "Meagan",
+          "phone": "+45 53 68 58 46",
+          "signal_link": "https://signal.link/call/#key=rffn-nbsp-ddqc-nrnt-grkn-rmhh-gzbp-nscx"
+        },
+        {
+          "name": "Federico",
+          "phone": "+45 23 72 20 23",
+          "signal_link": "https://signal.link/call/#key=zqxn-rmsq-gtxr-qmfp-mqmz-tghg-mnfk-tmbr"
+        }
+      ]
+    },
+    {
+      "day": "sunday",
+      "people": [
+        {
+          "name": "Christina",
+          "phone": "+45 50 27 62 32",
+          "signal_link": "https://signal.link/call/#key=gqkf-dftp-xpqd-ntxf-hcgm-sghq-sckx-tgsz"
+        },
+        {
+          "name": "Mathias",
+          "phone": "+45 28 89 22 29",
+          "signal_link": "https://signal.link/call/#key=mgch-bmmh-phxg-sbdg-pzhc-fkhx-mxcz-mzdr"
+        }
+      ]
+    },
+    {
+      "day": "sunday-bike",
+      "people": [
+        {
+          "name": "Christina",
+          "phone": "+45 50 27 62 32",
+          "signal_link": "https://signal.link/call/#key=gqkf-dftp-xpqd-ntxf-hcgm-sghq-sckx-tgsz"
+        },
+        {
+          "name": "Mathias",
+          "phone": "+45 28 89 22 29",
+          "signal_link": "https://signal.link/call/#key=mgch-bmmh-phxg-sbdg-pzhc-fkhx-mxcz-mzdr"
+        }
+      ]
+    }
+  ]
+}

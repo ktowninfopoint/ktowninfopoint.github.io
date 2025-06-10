@@ -1,0 +1,232 @@
+:root {
+    --hc-green: #28ff79;
+    --hc-black: #000;
+    --hc-dark: #111;
+    --hc-gray: #222;
+}
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: var(--hc-black);
+    color: white;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+header {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 3px solid var(--hc-green);
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+h1 {
+    color: var(--hc-green);
+    font-size: 2.5em;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 1px;
+}
+.link-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+.link-card {
+    background: var(--hc-dark);
+    padding: 20px;
+    border-left: 3px solid var(--hc-green);
+    transition: transform 0.2s;
+}
+.link-card:hover {
+    transform: translateY(-3px);
+}
+.link-title {
+    color: var(--hc-green);
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.link-description {
+    color: #ccc;
+    margin-bottom: 15px;
+    font-size: 0.95em;
+}
+.link-button {
+    display: inline-block;
+    background: var(--hc-green);
+    color: var(--hc-black) !important;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+@media (max-width: 768px) {
+    .link-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.day-tabs {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+   justify-content: center;
+   margin-bottom: 30px;
+}
+.day-tab {
+   background: var(--hc-gray);
+   color: var(--hc-green);
+   border: none;
+   padding: 10px 20px;
+   font-weight: bold;
+   cursor: pointer;
+   text-transform: uppercase;
+   transition: all 0.2s;
+}
+.day-tab:hover, .day-tab.active {
+   background: var(--hc-green);
+   color: var(--hc-black);
+}
+.contact-section {
+   display: none;
+}
+.contact-section.active {
+   display: block;
+}
+.contact-group {
+   margin-bottom: 30px;
+   background: var(--hc-dark);
+   padding: 15px;
+   border-left: 3px solid var(--hc-green);
+}
+.group-title {
+   color: var(--hc-green);
+   font-size: 1.3em;
+   margin-bottom: 15px;
+   text-transform: uppercase;
+}
+.contact-card {
+   display: grid;
+   grid-template-columns: 1fr auto;
+   gap: 15px;
+   padding: 12px 0;
+   border-bottom: 1px solid #333;
+}
+.contact-info {
+   display: flex;
+   flex-direction: column;
+}
+.contact-name {
+   font-weight: bold;
+   margin-bottom: 5px;
+}
+.contact-details {
+   display: flex;
+   gap: 15px;
+   font-size: 0.9em;
+}
+.contact-phone {
+   color: #ccc;
+}
+.contact-available {
+   color: var(--hc-green);
+}
+.contact-actions {
+   display: flex;
+   align-items: center;
+}
+.signal-button {
+   background: var(--hc-green);
+   color: var(--hc-black) !important;
+   padding: 8px 15px;
+   text-decoration: none;
+   font-weight: bold;
+   font-size: 0.9em;
+   white-space: nowrap;
+}
+@media (max-width: 768px) {
+   .contact-card {
+       grid-template-columns: 1fr;
+       gap: 10px;
+   }
+   .contact-details {
+       flex-direction: column;
+       gap: 5px;
+   }
+}
+
+.contacts-container {
+            background: var(--hc-gray);
+            padding: 20px;
+            margin-bottom: 30px;
+            border-left: 3px solid var(--hc-green);
+        }
+        .contacts-title {
+            color: var(--hc-green);
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .contact-item {
+            background: var(--hc-dark);
+            padding: 15px;
+        }
+        .contact-name {
+            color: var(--hc-green);
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .signal-button {
+            display: inline-block;
+            background: var(--hc-green);
+            color: var(--hc-black) !important;
+            padding: 8px 15px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+        .band-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .band-card {
+            background: var(--hc-dark);
+            padding: 15px;
+            border-left: 3px solid var(--hc-green);
+        }
+        .band-name {
+            color: var(--hc-green);
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        .band-time {
+            color: #ccc;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        .band-dj {
+            font-style: italic;
+            color: #aaa;
+        }
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            .band-list {
+                grid-template-columns: 1fr;
+            }
+        }

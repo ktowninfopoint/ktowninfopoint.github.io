@@ -1,0 +1,74 @@
+{
+  "days": [
+    {
+      "day": "FRIDAY",
+      "slug": "friday",
+      "bands": [
+        {"name": "PISTOL PISTOL PISTOL", "time": "19.00"},
+        {"name": "PSYKOSTAT", "time": "19.45"},
+        {"name": "TRÄUME", "time": "20.30"},
+        {"name": "LAME", "time": "21.15"},
+        {"name": "PX-30", "time": "22.00"},
+        {"name": "KILLING YIELD", "time": "22.45"},
+        {"name": "PEACE TALKS", "time": "23.30"},
+        {"name": "TORMENTED IMP", "time": "00.15"},
+        {"name": "POISON RUIN", "time": "01.00"},
+        {"name": "CICADA", "time": "01.45"},
+        {"name": "DJ BOVRIL LAVIGNE & DJ GORILLAFAR", "time": "23-04", "isDJ": true}
+      ]
+    },
+    {
+      "day": "SATURDAY MATINEE @ MAYHEM",
+      "slug": "saturday-matinée",
+      "bands": [
+        {"name": "OLMEK", "time": "1"},
+        {"name": "SHAMENT", "time": "2"},
+        {"name": "SIHIR", "time": "3"},
+        {"name": "MOLLY", "time": "4"}
+      ]
+    },
+    {
+      "day": "SATURDAY",
+      "slug": "saturday",
+      "bands": [
+        {"name": "TAUNT", "time": "18.00"},
+        {"name": "LADRONA", "time": "18.45"},
+        {"name": "LASSO", "time": "19.30"},
+        {"name": "GOLPE", "time": "20.15"},
+        {"name": "ZYFILIS", "time": "21.00"},
+        {"name": "NEKRA", "time": "21.45"},
+        {"name": "OUST", "time": "22.30"},
+        {"name": "NUCLEAR DEATH TERROR", "time": "23.15"},
+        {"name": "IRON LUNG", "time": "00.00"},
+        {"name": "TOTAL NADA", "time": "00.45"},
+        {"name": "KRIEGSHÖG", "time": "01.30"},
+        {"name": "DJ ASHKA LASHNIKOV & DJ SICK BOY", "time": "23-04", "isDJ": true}
+      ]
+    },
+    {
+      "day": "SUNDAY BIKE WARS",
+      "slug": "sunday-bike",
+      "bands": [
+        {"name": "CIRCLE NØNE", "time": "1"},
+        {"name": "SCHIRCHE OIDE", "time": "2"},
+        {"name": "FUCKIN' LOVERS", "time": "3"},
+        {"name": "HOLOCAUSTS", "time": "4"}
+      ]
+    },
+    {
+      "day": "SUNDAY",
+      "slug": "sunday",
+      "bands": [
+        {"name": "PLASMA", "time": "19.00"},
+        {"name": "NERVEGAS", "time": "19.45"},
+        {"name": "FUTURA", "time": "20.30"},
+        {"name": "VAMPIRE", "time": "21.15"},
+        {"name": "NECRON 9", "time": "22.00"},
+        {"name": "KORIDOR", "time": "22.45"},
+        {"name": "ΠΛΕΚΤΑΝΗ", "time": "23.30"},
+        {"name": "PUBLIC ACID", "time": "00.15"},
+        {"name": "DJ PENNY CENTURY & DJ NIICEPANTS", "time": "23-04", "isDJ": true}
+      ]
+    }
+  ]
+}

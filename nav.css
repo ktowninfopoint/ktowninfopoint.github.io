@@ -1,0 +1,45 @@
+/* Navigation Styles */
+        .main-nav {
+            background-color: #000;
+            padding: 15px 0;
+            border-bottom: 3px solid #28ff79;
+            margin-bottom: 20px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .nav-menu li a {
+            color: #28ff79;
+            text-decoration: none;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            padding: 5px 10px;
+            transition: all 0.2s;
+        }
+
+        .nav-menu li a:hover,
+        .nav-menu li a.active {
+            background-color: #28ff79;
+            color: #000;
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                gap: 10px;
+                padding: 0 10px;
+            }
+
+            .nav-menu li a {
+                font-size: 0.9em;
+                padding: 5px 8px;
+            }
+        }
