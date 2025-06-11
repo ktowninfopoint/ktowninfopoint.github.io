@@ -208,36 +208,37 @@
             {
               "name": "Meagan",
               "phone": "+45 53 68 58 46",
-              "signal_link": "https://signal.link/call/#key=rffn-nbsp-ddqc-nrnt-grkn-rmhh-gzbp-nscx"
+              "signal_link": "sgnl://call/+4553685846"
             },
             {
               "name": "Federico",
               "phone": "+45 23 72 20 23",
-              "signal_link": "https://signal.link/call/#key=zqxn-rmsq-gtxr-qmfp-mqmz-tghg-mnfk-tmbr"
+              "signal_link": "sgnl://call/+4523722023"
             },
             {
               "name": "Christina",
               "phone": "+45 50 27 62 32",
-              "signal_link": "https://signal.link/call/#key=gqkf-dftp-xpqd-ntxf-hcgm-sghq-sckx-tgsz"
+              "signal_link": "sgnl://call/+4550276232"
             },
             {
               "name": "Mathias",
               "phone": "+45 28 89 22 29",
-              "signal_link": "https://signal.link/call/#key=mgch-bmmh-phxg-sbdg-pzhc-fkhx-mxcz-mzdr"
+              "signal_link": "sgnl://call/+4528892229"
             },
             {
               "name": "Vedran",
               "phone": "+45 71 86 89 22",
-              "signal_link": "https://signal.link/call/#key=qrkr-txrq-dqmx-rcnn-kpsm-fcxp-sdbz-gcrc"
+              "signal_link": "sgnl://call/+4571868922"
             },
             {
               "name": "Camilla",
               "phone": "+45 60 66 76 01",
-              "signal_link": "https://signal.link/call/#key=xhgg-xsnm-rpqz-gbfp-pcbf-rqkz-ndqb-ntth"
+              "signal_link": "sgnl://call/+4560667601"
             },
             {
               "name": "Birk",
-              "phone": "+45 25 61 14 04"
+              "phone": "+45 25 61 14 04",
+              "signal_link": "sgnl://call/+4525611404"
             }
           ]
         }
