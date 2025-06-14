@@ -114,6 +114,31 @@
               "available": "all day"
             }
           ]
+        },
+        {
+          "type": "Bar",
+          "contacts": [
+            {
+              "name": "Mona",
+              "phone": "+45 27 50 83 82",
+              "available": "16.30-22:00"
+            },
+            {
+              "name": "Nikolaj",
+              "phone": "+45 27 50 83 82",
+              "available": "16.30-22:00"
+            },
+            {
+              "name": "Aksel",
+              "phone": "+45 27 50 83 82",
+              "available": "16.30-22:00"
+            },
+            {
+              "name": "Rasmus",
+              "phone": "+45 27 28 82 39",
+              "available": "22.00-04.30"
+            }
+          ]
         }
       ]
     },
