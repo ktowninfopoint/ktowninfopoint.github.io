@@ -210,6 +210,21 @@
               "available": "all day"
             }
           ]
+        },
+        {
+          "type": "Bar",
+          "contacts": [
+            {
+              "name": "Mette",
+              "phone": "+45 60 59 61 69",
+              "available": "16.30-4:00"
+            },
+            {
+              "name": "Sune",
+              "phone": "+45 23 98 62 25",
+              "available": "16.30-05:00"
+            }
+          ]
         }
       ]
     },
